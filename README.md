@@ -48,13 +48,13 @@ NameBlock-Designer/
 ---
 
 ## Usage
+
 1. Open `index.html` in a browser.
 2. Enter your desired name in the input field.
 3. Use the color pickers to customize individual block colors or apply the preset palette using the **Auto Colors** button.
-4. Choose a theme by selecting from the options available, such as **Sunset Vibes** or **Ocean Breeze**.
-5. Download your design as a PNG by clicking **Download Image**.
-6. Experiment with gradient background colors using the **Background Gradient** section.
-7. Users can use the generated name blocks in their portfolios, personal cards, or other projects. For inspiration and examples, you can visit [my portfolio](https://madhurimarawat.github.io/Portfolio-Website/) and my [GitHub profile](https://github.com/madhurimarawat).
+4. Optionally, choose a theme from the available options, such as **Sunset Vibes** or **Ocean Breeze**. This step does not affect the result; the output will be a transparent PNG image with name blocks in the selected colors and white letters inside the blocks.
+5. Download your design as a transparent PNG image by clicking **Download Image**.
+6. Use the generated name blocks in your portfolio, personal cards, or other projects. For inspiration and examples, visit [my portfolio](https://madhurimarawat.github.io/Portfolio-Website/) and [my GitHub profile](https://github.com/madhurimarawat). The project is deployed at [NameBlock-Designer Live](https://madhurimarawat.github.io/NameBlock-Designer/), or you can download and run it locally.
 
 ---
 
@@ -75,6 +75,13 @@ NameBlock-Designer/
 - **CSS3**: For styling and responsive design.
 - **JavaScript**: For interactivity and dynamic content.
 - **html2canvas**: For capturing the design and saving it as an image.
+
+---
+
+## Additional Notes
+
+- For more Frontend Development codes, visit my repository: [Website-Frontend-Development](https://github.com/madhurimarawat/Website-Frontend-Developement).
+- The [NameBlock-Designer](https://github.com/madhurimarawat/NameBlock-Designer) project contains the tool I used to create my name in blocks and make it transparent using [Remove.bg](https://www.remove.bg/). This tool generates a transparent PNG image from the given text, where the letters are initially white. If you want the letters to be transparent as well, you can use any background removal tool like Remove.bg for further customization. Explore the live demo here: [NameBlock-Designer Live Demo](https://madhurimarawat.github.io/NameBlock-Designer/).
 
 ---
 

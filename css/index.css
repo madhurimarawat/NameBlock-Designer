@@ -1,0 +1,331 @@
+/*
+Author: Madhurima Rawat
+Date: December 7, 2024
+Description: 
+This CSS file is for the "NameBlock Designer" project. The styles ensure a visually appealing, responsive, and user-friendly interface, enhancing the name block design application's functionality.
+
+Libraries and Tools Used:
+1. Font Awesome (6.1.1) - For icons in the navigation and dropdown.
+2. html2canvas (1.4.1) - Utilized indirectly through the JavaScript for capturing and downloading designs as PNG images.
+
+Key Features:
+1. Gradient Background - Sets a modern gradient background for the application.
+2. Responsive Navbar - Fully responsive with dropdown functionality and hover effects.
+3. Interactive Elements - Buttons, input fields, and dropdowns styled for intuitive interaction.
+4. Color Picker Section - Allows users to select and customize block colors.
+5. Responsive Design - Adaptable styles for phones and tablets using media queries.
+*/
+
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    /* Default font family */
+    text-align: center;
+    /* Center align text in the body */
+    margin: 20px;
+    /* Space around the body content */
+    background: linear-gradient(to right, #2bc0e4, #bec714);
+    /* Gradient background for the body */
+    color: #fff;
+    /* Default text color */
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 10px 20px;
+    /* Padding around the navbar content */
+    display: flex;
+    /* Flexbox for horizontal layout */
+    justify-content: space-between;
+    /* Space between navbar items */
+    align-items: center;
+    /* Align items vertically */
+    border-radius: 5px;
+    /* Rounded corners for the navbar */
+    margin-bottom: 20px;
+    /* Space below the navbar */
+    width: 93%;
+    /* Adjust width for responsiveness */
+}
+
+.navbar a {
+    color: #fff;
+    /* Text color for links */
+    text-decoration: none;
+    /* Remove underline from links */
+    padding: 10px 15px;
+    /* Add padding inside links */
+    border-radius: 5px;
+    /* Rounded corners for links */
+    font-size: 16px;
+    /* Font size for links */
+    transition: background-color 0.3s ease;
+    /* Smooth background color transition */
+}
+
+.navbar a:hover {
+    color: black;
+    /* Text color on hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    /* Position relative for dropdown functionality */
+    display: inline-block;
+    /* Inline block for dropdown alignment */
+    text-align: left;
+    /* Left-align dropdown content */
+}
+
+.dropdown-content {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    /* Position relative to parent */
+    background-color: #f9f9f9;
+    /* Light background color */
+    min-width: 160px;
+    /* Minimum width for dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    z-index: 1;
+    /* Ensure it appears above other elements */
+    border-radius: 5px;
+    /* Rounded corners for dropdown */
+}
+
+.dropdown-content a {
+    color: black;
+    /* Text color for dropdown links */
+    padding: 12px 16px;
+    /* Padding for dropdown links */
+    text-decoration: none;
+    /* Remove underline */
+    display: block;
+    /* Block display for stacking links */
+    border-bottom: 1px solid #ddd;
+    /* Border between items */
+    border-radius: 5px;
+    /* Slightly rounded edges */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    /* Background color on hover */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Display dropdown on hover */
+}
+
+/* Titles and Logos */
+.title {
+    font-size: 24px;
+    /* Font size for title */
+    font-weight: bold;
+    /* Bold title text */
+    margin-bottom: 20px;
+    /* Space below the title */
+}
+
+.logo img {
+    width: 100%;
+    /* Full width for logo images */
+    height: 100%;
+    /* Full height for logo images */
+}
+
+/* Blocks for Features */
+.block-container {
+    display: flex;
+    /* Flexbox for layout */
+    flex-wrap: wrap;
+    /* Wrap blocks to next row */
+    justify-content: center;
+    /* Center blocks horizontally */
+    gap: 10px;
+    /* Space between blocks */
+}
+
+.block {
+    display: flex;
+    /* Flexbox for centering content */
+    align-items: center;
+    /* Center align items vertically */
+    justify-content: center;
+    /* Center align items horizontally */
+    width: 50px;
+    /* Block width */
+    height: 50px;
+    /* Block height */
+    font-size: 20px;
+    /* Font size for block text */
+    font-weight: bold;
+    /* Bold block text */
+    color: white;
+    /* Text color */
+    border-radius: 5px;
+    /* Rounded block corners */
+    text-transform: uppercase;
+    /* Uppercase block text */
+}
+
+/* Color Options Section */
+#color-options {
+    margin-top: 30px;
+    /* Space above the color options section */
+}
+
+#color-pickers {
+    margin-top: 20px;
+    /* Space above the color pickers section */
+}
+
+#color-pickers input {
+    margin: 10px;
+    /* Space around color picker inputs */
+}
+
+/* Buttons */
+button {
+    background-color: #264653;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    padding: 10px 20px;
+    /* Padding inside buttons */
+    margin: 10px 5px;
+    /* Space around buttons */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded button corners */
+    font-size: 16px;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #2a9d8f;
+    /* Background color on hover */
+}
+
+/* Input Fields */
+#name-input {
+    padding: 10px;
+    /* Padding inside input field */
+    font-size: 16px;
+    /* Font size for input text */
+    border: 2px solid #fff;
+    /* White border */
+    border-radius: 5px;
+    /* Rounded input field corners */
+    outline: none;
+    /* Remove default focus outline */
+    color: #333;
+    /* Input text color */
+    background-color: #fff;
+    /* Input background color */
+    margin-right: 10px;
+    /* Space to the right of the input */
+}
+
+#name-input:focus {
+    border-color: #2a9d8f;
+    /* Border color on focus */
+    box-shadow: 0 0 5px #2a9d8f;
+    /* Subtle focus shadow */
+}
+
+/* Download Section */
+.download-section {
+    margin-top: 20px;
+    /* Space above download section */
+}
+
+/* Media Queries for Responsiveness */
+/* Phones (below 768px) */
+@media (max-width: 767px) {
+    div>label {
+        font-size: 16px;
+        /* Adjust font size */
+        margin-right: 5px;
+        /* Reduce margin */
+    }
+
+    #name-input {
+        margin: 10px 0;
+        /* Vertical spacing */
+        width: 90%;
+        /* Responsive width */
+        max-width: 300px;
+        /* Limit max width */
+    }
+
+    button {
+        margin-top: 15px;
+        /* Space above button */
+        width: 90%;
+        /* Responsive width */
+        max-width: 300px;
+        /* Limit max width */
+    }
+
+    .dropdown-content {
+        position: fixed;
+        /* Fixed position for visibility */
+        bottom: 10px;
+        /* Align near bottom */
+        left: 10px;
+        /* Padding from left */
+        right: 10px;
+        /* Padding from right */
+        width: auto;
+        /* Flexible width */
+        max-width: 100%;
+        /* Use full screen width */
+        z-index: 1000;
+        /* Ensure visibility */
+    }
+
+    .dropdown-content a {
+        text-align: center;
+        /* Center align links */
+        font-size: 14px;
+        /* Smaller font size */
+        padding: 8px 10px;
+        /* Compact padding */
+    }
+}
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .dropdown-content {
+        position: absolute;
+        /* Align relative to parent */
+        left: 50%;
+        /* Start at center */
+        transform: translateX(-50%);
+        /* Center align */
+        width: 200px;
+        /* Adjusted width */
+        max-width: 90%;
+        /* Ensure no overflow */
+    }
+
+    .dropdown-content a {
+        text-align: center;
+        /* Center align links */
+        font-size: 16px;
+        /* Adjust font size */
+        padding: 10px 16px;
+        /* Adjust padding */
+    }
+}

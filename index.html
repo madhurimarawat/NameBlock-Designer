@@ -1,0 +1,115 @@
+<!-- 
+Author: Madhurima Rawat
+Date: December 7, 2024
+Description: 
+This is the main HTML file for the "NameBlock Designer" project. 
+The application allows users to input their name, generate colorful block representations for each letter, and customize their design with various themes. Users can also download their designs as PNG images.
+
+Libraries and Tools Used:
+1. Font Awesome (6.1.1) - For icons used in the navigation and dropdown.
+2. html2canvas (1.4.1) - For converting the designed blocks into a downloadable PNG image.
+3. JavaScript (index.js) - Contains the logic for dynamic theme changes, block generation, and image download functionality.
+
+Key Features:
+1. Theme Selection - Dynamic theme backgrounds based on user choice.
+2. Customizable Block Colors - Choose colors for each letter in the name.
+3. Auto Fill Colors - Option to apply automatic colors.
+4. PNG Download - Convert the designed blocks into an image.
+
+Functions (in index.js):
+1. `changeBackground(color1, color2)` - Updates the background gradient.
+2. `generateBlocks()` - Creates colored blocks for each letter of the input name.
+3. `applyAutoColors()` - Automatically assigns colors to blocks.
+4. `downloadImage()` - Captures the design and downloads it as a PNG.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title for the webpage -->
+    <title>NameBlock Designer</title>
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Favicon for the webpage -->
+    <link rel="icon" href="images/Logo.png" type="image/jpeg">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar at the top -->
+    <div class="navbar">
+        <!-- Logo section -->
+        <div class="logo">
+            <img src="images/NAMEBLOCK DESIGNER_NameBlock.png" alt="Logo" />
+        </div>
+
+        <!-- Dropdown menu for theme selection -->
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle">
+                🎨 Select Theme
+            </a>
+
+            <!-- Dropdown content with theme options -->
+            <div class="dropdown-content">
+                <!-- Theme options with onclick events to change the background -->
+                <a href="#" onclick="changeBackground('#ff7e5f', '#feb47b')">🌅 Sunset Vibes</a>
+                <a href="#" onclick="changeBackground('#2bc0e4', '#eaecc6')">🌊 Ocean Breeze</a>
+                <a href="#" onclick="changeBackground('#c2a6ff', '#d6c1ff')">🌙 Lavender Dream</a>
+                <a href="#" onclick="changeBackground('#6dd5ed', '#2193b0')">🍃 Green Freshness</a>
+                <a href="#" onclick="changeBackground('#f85032', '#e73827')">🔥 Fiery Passion</a>
+                <a href="#" onclick="changeBackground('#f6d365', '#fda085')">🌇 Golden Hour</a>
+                <a href="#" onclick="changeBackground('#00c6ff', '#0072ff')">🚢 Calm Seas</a>
+                <a href="#" onclick="changeBackground('#fbc2eb', '#a18cd1')">💖 Peachy Pink</a>
+                <a href="#" onclick="changeBackground('#ff4b2b', '#ff416c')">🍂 Autumn Leaves</a>
+                <a href="#" onclick="changeBackground('#1c1c1c', '#383838')">🌌 Mysterious Night</a>
+                <a href="#" onclick="changeBackground('#a1c4fd', '#c2e9fb')">☁️ Pastel Dream</a>
+                <a href="#" onclick="changeBackground('#00b4db', '#0083b0')">🌴 Tropical Paradise</a>
+                <a href="#" onclick="changeBackground('#8e44ad', '#3498db')">🌫️ Purple Haze</a>
+                <a href="#" onclick="changeBackground('#8e44ad', '#e74c3c')">🍓 Berry Blast</a>
+                <a href="#" onclick="changeBackground('#dcdcdc', '#f8f9fa')">🌤️ Silver Lining</a>
+                <a href="#" onclick="changeBackground('#9cecfb', '#65c7f7')">🌬️ Cool Breeze</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main title of the application -->
+    <div class="title">NameBlock Designer</div>
+
+    <!-- Input section for user to enter their name -->
+    <div>
+        <label for="name-input">Enter your name:</label>
+        <input type="text" id="name-input" placeholder="Madhurima Rawat" />
+        <button onclick="generateBlocks()">Generate Blocks</button>
+    </div>
+
+    <!-- Section to display color customization options -->
+    <div id="color-options" style="display: none;">
+        <p>Select colors for each letter:</p>
+        <button onclick="applyAutoColors()">Auto Fill Colors</button>
+        <div id="color-pickers"></div>
+        <button onclick="downloadImage()">Download as PNG</button>
+    </div>
+
+    <!-- Container to display generated blocks -->
+    <div class="block-container" id="block-container"></div>
+
+    <!-- External libraries and scripts -->
+    <!-- html2canvas library for capturing designs as images -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Link to the custom JavaScript file -->
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

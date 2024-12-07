@@ -1,6 +1,18 @@
 # NameBlock-Designer
 NameBlock-Designer is a web-based tool for creating personalized name blocks with customizable colors and dynamic themes. Users can download their designs as images, and the tool is fully responsive, providing a seamless experience on all devices.
 
+<a href="https://madhurimarawat.github.io/NameBlock-Designer/"> <img src = "images/NAMEBLOCK DESIGNER_NameBlock.png"></a>
+
+<a href="https://madhurimarawat.github.io/NameBlock-Designer/">
+  <img src="website_view/Website_Working.gif" title="Website Working GIF" alt="Website Working GIF">
+</a>
+
+<br>
+
+<a href="https://madhurimarawat.github.io/NameBlock-Designer/">
+  <img src="website_view/Website_Themes.gif" title="Website Themes GIF" alt="Website Themes GIF">
+</a>
+
 ---
 
 ## Features
@@ -75,6 +87,46 @@ NameBlock-Designer/
 - **CSS3**: For styling and responsive design.
 - **JavaScript**: For interactivity and dynamic content.
 - **html2canvas**: For capturing the design and saving it as an image.
+
+---
+
+## Website Design
+
+<a href="https://madhurimarawat.github.io/NameBlock-Designer/">
+  <img src="website_view/View_1.png" title="View 1" alt="Screenshot of View 1">
+</a>
+<br><br>
+<a href="https://madhurimarawat.github.io/NameBlock-Designer/">
+  <img src="website_view/View_2.png" title="View 2" alt="Screenshot of View 2">
+</a>
+<br><br>
+<a href="https://madhurimarawat.github.io/NameBlock-Designer/">
+  <img src="website_view/View_3.png" title="View 3" alt="Screenshot of View 3">
+</a>
+<br><br>
+<a href="https://madhurimarawat.github.io/NameBlock-Designer/">
+  <img src="website_view/View_4.png" title="View 4" alt="Screenshot of View 4">
+</a>
+<br><br>
+<a href="https://madhurimarawat.github.io/NameBlock-Designer/">
+  <img src="website_view/View_5.png" title="View 5" alt="Screenshot of View 5">
+</a>
+<br><br>
+<a href="https://madhurimarawat.github.io/NameBlock-Designer/">
+  <img src="website_view/View_6.png" title="View 6" alt="Screenshot of View 6">
+</a>
+<br><br>
+<a href="https://madhurimarawat.github.io/NameBlock-Designer/">
+  <img src="website_view/View_7.png" title="View 7" alt="Screenshot of View 7">
+</a>
+<br><br>
+<a href="https://madhurimarawat.github.io/NameBlock-Designer/">
+  <img src="website_view/View_8.png" title="View 8" alt="Screenshot of View 8">
+</a>
+<br><br>
+<a href="https://madhurimarawat.github.io/NameBlock-Designer/">
+  <img src="website_view/View_9.png" title="View 9" alt="Screenshot of View 9">
+</a>
 
 ---
 

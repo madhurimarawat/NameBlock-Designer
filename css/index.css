@@ -1,12 +1,11 @@
 /*
 Author: Madhurima Rawat
-Date: December 7, 2024
+Date: December 8, 2024
 Description: 
 This CSS file is for the "NameBlock Designer" project. The styles ensure a visually appealing, responsive, and user-friendly interface, enhancing the name block design application's functionality.
 
 Libraries and Tools Used:
-1. Font Awesome (6.1.1) - For icons in the navigation and dropdown.
-2. html2canvas (1.4.1) - Utilized indirectly through the JavaScript for capturing and downloading designs as PNG images.
+1. html2canvas (1.4.1) - Utilized indirectly through the JavaScript for capturing and downloading designs as PNG images.
 
 Key Features:
 1. Gradient Background - Sets a modern gradient background for the application.

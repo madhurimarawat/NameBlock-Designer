@@ -133,7 +133,7 @@ NameBlock-Designer/
 ## Additional Notes
 
 - For more Frontend Development codes, visit my repository: [Website-Frontend-Development](https://github.com/madhurimarawat/Website-Frontend-Developement).
-- The [NameBlock-Designer](https://github.com/madhurimarawat/NameBlock-Designer) project contains the tool I used to create my name in blocks and make it transparent using [Remove.bg](https://www.remove.bg/). This tool generates a transparent PNG image from the given text, where the letters are initially white. If you want the letters to be transparent as well, you can use any background removal tool like Remove.bg for further customization. Explore the live demo here: [NameBlock-Designer Live Demo](https://madhurimarawat.github.io/NameBlock-Designer/).
+- The [NameBlock-Designer](https://github.com/madhurimarawat/NameBlock-Designer) project is the tool I used to create my name in blocks and make it transparent using [Remove.bg](https://www.remove.bg/). This tool generates a transparent PNG image from the given text, where the letters are initially white. If you want the letters to be transparent as well, you can use any background removal tool like Remove.bg for further customization. Explore the live demo here: [NameBlock-Designer Live Demo](https://madhurimarawat.github.io/NameBlock-Designer/).
 
 ---
 

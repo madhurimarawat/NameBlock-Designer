@@ -133,9 +133,7 @@ NameBlock-Designer/
 ## Additional Notes
 
 - Explore more frontend development projects in my repository: [Website-Frontend-Development](https://github.com/madhurimarawat/Website-Frontend-Developement).  
-- [NameBlock-Designer](https://github.com/madhurimarawat/NameBlock-Designer) is the tool I used to create vibrant name blocks. I generated these blocks, made them transparent using [Remove.bg](https://www.remove.bg/), and added them to my [portfolio website](https://madhurimarawat.github.io/Portfolio-Website/).  
-- Visit my portfolio for more creative work: [Portfolio Website](https://madhurimarawat.github.io/Portfolio-Website/).  
-- Try the live demo of NameBlock-Designer: [NameBlock-Designer Live Demo](https://madhurimarawat.github.io/NameBlock-Designer/).
+- [NameBlock-Designer](https://madhurimarawat.github.io/NameBlock-Designer/) is a tool to create vibrant, personalized name blocks. I used it to design blocks, made them transparent using [Remove.bg](https://www.remove.bg/), and added them to my [portfolio website](https://madhurimarawat.github.io/Portfolio-Website/).  
 
 ---
 

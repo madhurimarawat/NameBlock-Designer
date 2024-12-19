@@ -20,7 +20,7 @@ NameBlock-Designer is a web-based tool for creating personalized name blocks wit
 - **Customizable Colors**: Allows individual color selection for each block.
 - **Automatic Coloring**: Provides a one-click option to apply a preset color palette.
 - **Image Download**: Lets users save their creations as PNG images.
-- **Gradient Background**: Users can apply gradient background effects for enhanced visuals.
+- **Gradient Background**: Apply gradient effects to the website’s background, without affecting the saved transparent PNG image.
 - **Multiple Themes**: Includes various themes for an engaging user experience, such as:
   
   - **🌅 Sunset Vibes**

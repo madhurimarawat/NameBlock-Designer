@@ -1,13 +1,15 @@
 <!-- 
 Author: Madhurima Rawat
-Date: December 20, 2024
+Date: December 23, 2024
 Description: 
 This is the main HTML file for the "NameBlock Designer" project. 
 The application allows users to input their name, generate colorful block representations for each letter, and customize their design with various themes. Users can also download their designs as PNG images.
 
-Libraries and Tools Used:
+### Libraries and Tools Used:
+
 1. html2canvas (1.4.1) - For converting the designed blocks into a downloadable PNG image.
 2. JavaScript (index.js) - Contains the logic for dynamic theme changes, block generation, and image download functionality.
+3. Font Awesome (6.0.0) - Used for displaying the GitHub logo with the `fab fa-github` class in the project.
 
 Key Features:
 1. Theme Selection - Dynamic theme backgrounds based on user choice.
@@ -26,6 +28,9 @@ Functions (in index.js):
 <html lang="en">
 
 <head>
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
     <!-- Required meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
@@ -108,6 +113,12 @@ Functions (in index.js):
         <!-- Logo section -->
         <div class="logo">
             <img src="images/NAMEBLOCK DESIGNER_NameBlock.png" alt="Logo" />
+        </div>
+
+        <div>
+            <a href="https://github.com/madhurimarawat/NameBlock-Designer"><i class="fab fa-github"></i>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                GitHub &nbsp; Repo </a>
         </div>
 
         <!-- Dropdown menu for theme selection -->
